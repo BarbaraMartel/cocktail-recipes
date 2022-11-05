@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Secretos Cocteleros</h1>
+  <main>
+
+    <section id="search">
+      <input type="text" placeholder="pikachu" id="drinkName" name="drinkName">
+      <button onclick="fetchCocktail()">Buscar cóctel</button>
+    </section>
+
+    <div id="container">
+      <img src="./img/inicio.jpg" alt="cocktail" id="drinkImg" width="350px">
+      <div id="ingredients">
+        <ul id="ulIngre"></ul>
+      </div>
+    </div>
+
+    <p id="drinkRecipe" name="drinkRecipe"></p>
+
+  </main>
+</body>
+<footer>
+  <script src="./cocktail-recipes.js"></script>
+</footer>
+</body>
+
+</html>
