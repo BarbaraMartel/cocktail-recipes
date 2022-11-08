@@ -1,0 +1,73 @@
+/* Page styles */
+
+body {
+  background-color: #f3f3f3;
+}
+
+/* Header */
+
+header img {
+  max-width: 120px;
+}
+
+
+/* Content */
+
+.main {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#search{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span{
+  font-weight: bold;
+}
+
+#drinkImg{
+  width: 450px;
+  height: 450px;
+}
+.card{
+  height: 170px;
+  width: 450px;
+}
+p{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+li{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+@media (min-width: 576px) {
+  .main {
+    padding: 36px 42px;
+  }
+}
+
+@media (max-width: 880px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+section{
+  font-weight: bold;
+  margin: 40px 0 24px;
+}
+
+address{
+  text-align: center;
+}

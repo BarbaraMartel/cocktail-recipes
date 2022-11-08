@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sin Secretos Cocteleros - Recetario</title>
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <div class="container border bg-white rounded border-white shadow main">
+
+    <div>
+      <a href="index.html">
+        <h2>Sin Secretos Cocteleros</h2>
+      </a>
+      <span class="lead">Recetario de cócteles de todo el mundo</span>
+      <br><br>
+      <img class="img-fluid border rounded shadow mb-4" src="./assets/img/inicio.jpg" alt="cocktail" id="drinkImg">
+    </div>
+
+
+    <div id="right-side">
+      <section class="form-inline" id="search">
+        <input class="form-control form-control-md shadow" type="text" placeholder="Nombre de tu bebida" id="drinkName"
+          name="drinkName">
+        <button class="btn btn-primary shadow" onclick="fetchCocktail()">Buscar bebida</button>
+      </section>
+      <p class="lead">Tu bebida es: <span id="cocktail-name">____________</span></p>
+      <section class="card shadow" id="section-ingredients">
+        <div class="card-header">
+          Ingredientes
+        </div>
+        <ul id="ulIngre">
+          <li>
+            Aquí aparecerán los ingredientes de la bebida que buscas.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card shadow" id="section-recipe">
+        <div class="card-header">
+          Receta
+        </div>
+        <p id="drinkRecipe" name="drinkRecipe">Encuentra aquí la mejor receta para preparar la bebida de tu elección.
+        </p>
+      </section>
+    </div>
+
+  </div>
+
+</body>
+<footer>
+  <br>
+  <script src="./assets/js/cocktail-recipes.js"></script>
+  <address>By Barbara Martel</address>
+</footer>
+</body>
+
+</html>
